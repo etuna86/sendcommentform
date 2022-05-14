@@ -1,0 +1,61 @@
+$standartBtnColor:#372E47;
+$whiteColor:#ffffff;
+$blackColor:#000000;
+$greyColor:#C4C4C4;
+$lightGreyColor:#E5E5E5;
+$weightGreyColor:#8D8D8D;
+$canvasColor:#382E47;
+
+$socialMediaLoginColor:#BAB6B6;
+
+$packageColor:#A0A0A0;
+
+
+
+@mixin transitionMethod($time){
+    transition: all $time ease-in;
+    -moz-transition: all $time ease-in;
+    -webkit-transition: all $time ease-in;
+    -ms-transition: all $time ease-in;
+  }
+
+  
+@mixin borderRadius($borderval)
+{
+  -webkit-border-radius: $borderval;
+  -moz-border-radius:$borderval ;
+  border-radius:$borderval ;
+
+}
+
+@mixin borderRadiusAll($bordervaltop,$bordervalright,$bordervalbottom,$bordervalleft)
+{
+  -webkit-border-top-left-radius: $bordervaltop;
+  -moz-border-top-left-radius:$bordervaltop ;
+  border-top-left-radius:$bordervaltop ;
+
+  -webkit-border-top-right-radius: $bordervalright;
+  -moz-border-top-right-radius:$bordervalright ;
+  border-top-right-radius:$bordervalright ;
+
+  -webkit-border-bottom-right-radius: $bordervalbottom;
+  -moz-border-bottom-right-radius:$bordervalbottom ;
+  border-bottom-right-radius:$bordervalbottom ;
+
+  -webkit-border-bottom-left-radius: $bordervalleft;
+  -moz-border-bottom-left-radius:$bordervalleft ;
+  border-bottom-left-radius:$bordervalleft ;
+
+}
+
+@mixin rotateMethod($rotateMethod){
+  -webkit-transform: rotate($rotateMethod);
+  -ms-transform: rotate($rotateMethod);
+  -moz-transform: rotate($rotateMethod);
+}
+
+@mixin boxShadow(){
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
