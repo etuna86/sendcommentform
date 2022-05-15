@@ -1,10 +1,10 @@
-import React,{Component,FC,Suspense}  from 'react';
-import { Router,Switch, Route } from "react-router-dom";
+import React,{Component}  from 'react';
+import { Router,Switch, Route,withRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
 let customHistory = createBrowserHistory();
+import Login from './pages/login';
 import Home from './pages/home';
-import PageOne from './pages/pageOne';
-import PageTwo from './pages/pageTwo';
+import CountryCodes from './pages/countryCodes';
 import ContactUs from './pages/contactUs';
 
 
@@ -13,27 +13,24 @@ class App extends Component {
     super(props);
 
 }
-
   render(){
     return (  
-      <Suspense fallback={null}>
           <Router history={customHistory}>
             <Switch>
-              <Route exact path="/">
+            <Route exact path="/">
+                <Login />
+              </Route>
+              <Route  path="/home">
                 <Home />
               </Route>
-              <Route  path="/pageone">
-                <PageOne />
-              </Route>
-              <Route  path="/pagetwo">
-                <PageTwo />
+              <Route  path="/countrycodes">
+                <CountryCodes />
               </Route>
               <Route  path="/contactus">
                 <ContactUs />
               </Route>
             </Switch>
           </Router>
-          </Suspense>
   
     );
   }

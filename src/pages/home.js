@@ -1,11 +1,8 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import Header from '../layouts/header'
 import Footer from '../layouts/footer'
-
+import {withRouter } from 'react-router-dom';
 function Home(){
-
-    const {t} =useTranslation();
 
 return(
     <>
@@ -30,4 +27,4 @@ return(
 }
 
 
-export default Home;
+export default withRouter(Home);

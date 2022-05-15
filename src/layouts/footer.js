@@ -15,13 +15,12 @@ function footer(){
             <div className="col-md-8">
                 <div className="menu">
                     <ul>
-                    <Link to="/">Home Page</Link>
+                    <Link to="/home">Home Page</Link>
                         <Link to={{
-                            pathname:"pageone",
+                            pathname:"countrycodes",
                             state:{
-                                pageName:"pageOne"
-                            }}}>Page One</Link>
-                        <Link to="pagetwo">Page Two</Link>
+                                pageName:"Country Codes"
+                            }}}>Country Codes</Link>
                         <Link to="contactus">Contact</Link>
                     </ul>
                 </div>
