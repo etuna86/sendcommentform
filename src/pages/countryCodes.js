@@ -20,7 +20,6 @@ function getCountries(){
     .then((res)=>{
         Object.entries(res.data).forEach( entry => { 
             const [key, value] = entry;
-            console.warn("resrow: ",key + value);
             setCountries(countries => [...countries, {
                 code:key,
                 country:value,

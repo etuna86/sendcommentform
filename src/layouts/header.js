@@ -36,7 +36,6 @@ function Header(props){
         setName("");
         setPassword("");
         UpdateUser("");  
-        console.warn("props: ",props); 
         props.history.push("/");
     }
 
